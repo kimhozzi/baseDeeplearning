@@ -31,7 +31,7 @@ for ix,d in enumerate(x_train[0]):
 
 print()
 
-print("y: ",y_train[0]*1000*14000)
+print("y: ",y_train[0]*1000*14000)  # 원화로 변환
 
 #2. 데이터의 유형이나 관련 필드 등을 분석 분류
 #      CRIM: 도시별 1인당 범죄율   25,000제곱피트(sq.ft) 이상
