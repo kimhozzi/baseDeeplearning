@@ -6,13 +6,37 @@
     <title>SEC AI SOLUTION</title>
 
     <style>
+          #git_address {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #24292e; /* GitHub 스타일 어두운 회색 */
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
 
-        
+  #git_address:hover {
+    background-color: #4078c0; /* 파란색 강조 */
+    transform: translateY(-2px); /* 살짝 뜨는 느낌 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  #git_address:active {
+    transform: translateY(0); /* 클릭 시 원위치 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+
     </style>
   </head>
 
   <body>
     <h1>인공지능솔루션 적대적 공격 위협분석 AI 보안 전문가</h1>
+    <div id = "git_address">
+        GitHub 주소
+    </div>
 
     <p style="padding-left: 1.5rem">
         <div>  
@@ -26,8 +50,8 @@
   </body>
 
   <script>
-    const boston_regress = document.getElementById("boston_regress");
-    boston_regress.addEventListener("click", () => {
+    const git_address = document.getElementById("git_address");
+    git_address.addEventListener("click", () => {
       location.href(
         "https://https://github.com/kimhozzi?tab=repositories.com/kimhozzi"
       );
