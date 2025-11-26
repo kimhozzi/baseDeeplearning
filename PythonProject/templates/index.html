@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post" , action="/myinfo">
+      <label>이름<input type="text" name="myname" /></label>
+      <label>나이<input type="number" value="20" name="age" /></label>
+      <input type="submit" value="서버전송" />
+    </form>
+    시험용
+    <img id = "img">
+
+    <script>container = document.getElementById("img")
+    async function getimg() {
+    res= await fetch("/getimg/gi2.jpg")
+    imgtxt = await res.text()    
+    };
+    getimg();
+    container.src = imgtxt;
+    </script>
+  </body>
+</html>

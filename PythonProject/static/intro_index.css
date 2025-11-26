@@ -1,0 +1,61 @@
+body {
+  padding: 0;
+  /* overflow-y:hidden ~ 스크롤바 안생겨남..*/
+}
+
+h1 {
+  height: 6vh;
+  line-height: 6vh;
+
+  background: #665c5c;
+  line-height: 5vh;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.models {
+  justify-content: center;
+  text-align: center;
+}
+
+a {
+  display: block;
+  margin-bottom: 12px;
+}
+a:hover {
+  background-color: #d3cfcf;
+  border-radius: 10px;
+  width: auto;
+}
+
+#gifTest {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: auto;
+  padding-top: 2vh;
+}
+
+#myCaptain {
+  transform: scaleX(-1);
+  animation: move 4s infinite;
+}
+
+@keyframes move {
+  0% {
+    left: 1rem;
+  }
+  50% {
+    right: 1rem;
+    transform: scaleX(-1);
+  }
+  100% {
+    left: 1rem;
+    transform: scaleX(-1);
+  }
+}

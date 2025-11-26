@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    json 데이터 송신
+    <button id="jbtn">송신</button>
+    <div id="server_content"> </div>
+    <script>
+      const server_content = document.getElementById("server_content);
+
+    jbtn = document.getElementById("jbtn");
+    jdata = { myname: "aa", age: 20 };
+    jbtn.addEventLitsener("click", async () => {
+      await fetch("/testjson/jdata", {
+        headers: { "Content-Type": application/json },
+        method: "post",
+        body: JSON.stringify(jdata),
+      });
+      let result = await pendding.json()
+      server_content.innerText= `송수신데이터: ${result.myname} ,  ${result.age}`
+      console.log(result)
+    });
+</script>
+
+  </body>
+</html>

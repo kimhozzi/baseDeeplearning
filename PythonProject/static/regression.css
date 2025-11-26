@@ -1,0 +1,43 @@
+#mycontent {
+  font-size: 1.2rem;
+}
+legend {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+select {
+  width: 8rem;
+}
+form .con {
+  padding-left: calc(50vw - 8rem);
+  margin-bottom: 1rem;
+}
+label {
+  display: inline-block;
+  width: 8rem;
+}
+
+#mycontent .con {
+  padding-left: calc(50vw - 8rem);
+  margin-bottom: 1rem;
+}
+
+#res_contain {
+  top: 10%;
+}
+#closeBtn {
+  cursor: default;
+}
+#closeBtn:hover {
+  color: red;
+  cursor: pointer;
+}
+#graph_section {
+  width: 80%;
+  margin-top: 2rem;
+}
+#graph_div {
+  width: 80%;
+}

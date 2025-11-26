@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>코인 가격 분석 모델</title>
+    <link rel="stylesheet" href="../static/intro_index.css" />
+    <link rel="stylesheet" href="../static/regression.css" />
+  </head>
+
+  <script src = "{{url_for('static',filename='js/regression.js')}}"></script>
+
+  
+  <body onload="get_coin_name()"> 
+    <h1>Projects</h1>
+    <div id="main_intro">
+      <h3 style="margin-bottom: 3rem">1.모델</h3>
+
+      <div class="models">
+        <a href="Crypto_Coin_Service_02/templates/regression.html">가상화폐가격예측모델(다중선형회귀)</a>
+        <br />
+        <a href="">쇼핑 리뷰 분석 모델(자연어처리 with.kiwi)</a>
+      </div>
+        <h2> 다중 선형회귀분석 모델 구현</h2>
+        
+      </br>
+      <div id="mycontent">
+        <legend>분석 정보 입력</legend>
+        <div class="con">
+          <label for="timegap">코인명coinname</label>
+          <select id="coinname" name="coinname">
+            <!-- <option value="btc">BTC</option> -->
+          </select>
+        </div>
+
+        <div class="con">
+          <label for="timegap">연속 분석 일수</label>
+          <input  id="timegap" type="number" name="timegap" value="1" style="width: 8rem" />
+        </div class="con">
+      </div>
+      <div class="con"><button id="anal_btn" style="padding: 0.5rem; border-radius: 3%;">분석하기</button></div>
+
+      <div id="res_contain" style="width:calc(99vw - 1.2rem);
+          height:calc(99vh - 10rem);
+          background:whitesmoke;
+          display:none;position: fixed;
+          overflow-y: auto;">
+          <span 
+        style="position: absolute;right:0.5rem;top:0.5rem;font-size: 2rem;"
+        id="closeBtn" class="material-symbols-outlined">
+          cancel
+          </span>
+          <div id="anal_data" style="padding:1rem"></div>
+          <div id="result"></div>
+      </div>
+    </div>
+  </body>
+<!-- <script>  iframe 쓸거면 여기서 이렇게 스크립트주고 addEventLitsener 해야하나?</script> -->
+  </html>
+
